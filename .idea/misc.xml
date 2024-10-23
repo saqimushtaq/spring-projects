@@ -8,7 +8,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/threads/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-otp/pom.xml" />
+        <option value="$PROJECT_DIR$/elasticsearch/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-otp/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="21" project-jdk-type="JavaSDK">
