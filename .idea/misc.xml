@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/threads/pom.xml" />
         <option value="$PROJECT_DIR$/spring-otp/pom.xml" />
         <option value="$PROJECT_DIR$/elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/batch-processing/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
