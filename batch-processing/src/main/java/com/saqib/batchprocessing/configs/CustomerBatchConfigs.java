@@ -19,7 +19,6 @@ import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.transaction.PlatformTransactionManager;
 
@@ -62,7 +61,7 @@ public class CustomerBatchConfigs {
   }
 
   @Bean
-  public Step step(){
+  public Step step() {
     return new StepBuilder("step-1", jobRepository)
       .<Customer, Customer>chunk(10, transactionManager)
       .reader(customerReader(null))
@@ -72,7 +71,7 @@ public class CustomerBatchConfigs {
   }
 
   @Bean
-  public Job job(){
+  public Job job() {
     return new JobBuilder("customer-batch", jobRepository)
       .incrementer(new RunIdIncrementer())
       .flow(step())
